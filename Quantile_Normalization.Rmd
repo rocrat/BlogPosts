@@ -1,0 +1,26 @@
+---
+title: "Quantile Normalization for IVD Classifiers"
+slug: "INSERT_SLUG_HERE"
+author: "Dominic LaRoche"
+date: "YYYY-MM-DD"
+output: markdowntemplates::hugo
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+
+
+```
+
+
+# Normalization
+
+Some form of normalization is neccessary for nearly all analyses of RNA-Seq data due to arbitrary differences in read depth associated with each sample.  Normalization methods have been shown to improve the ability to detect meaningful differences among samples associated with treatment or biological condition (CITE).  There are a handful of popular normalization methods including Total counts, median, upper-quartile, Trimmed-mean of m-values (TMM), and quantile normalization.  These normalizations fall into two categories: 1) those which estimate a single scaling factor for each samples, and 2) those which replace adjust the values of each probe individually.  
+
+Median, upper-quartile, and TMM normalizations each use different methods to estimate a scaling factor for each sample.  All of the probes in each sample are then divided by the scaling factor corresponding to that sample.  Counts-per-million (CPM) standardization is another form of this normalization method, but for CPM the scaling factor is just the total number of reads allocated to that sample.  Scaling factor normalization methods vary in their efficacy (CITE), but they are all limited in their ability to reduce unwanted noise between samples because a single scaling factor cannot eliminate all distributional differences between samples that may arise from the measurement process.
+
+# Quantile Noralization
+
+
+
+
