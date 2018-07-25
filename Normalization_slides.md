@@ -165,6 +165,39 @@ All of these normalization methods can be grouped into two categories:
   
 Performance of Normalization Methods
 ========================================================
+<img src="./Figures/DilliesetalCompare.png" alt="drawing" width="800px"/>
+
+***
+From Dillies et al. 2012
+
+(a.) Boxplots for all conditions and replicates in mouse data
+
+(b.) Boxplot of intragroup variance
+
+(c.) CV of housekeeping genes in humans
+
+(d.) Similarity of differential expression results
+
+
+Performance of Normalization Methods
+========================================================
+<img src="./Figures/Compare_Normalizations_Plasma.png" alt = "drawing" width="600px"/>
+
+***
+
+- Quantile normalization often results in better classification (anecdotally!)
+- Papers have variously recommended different normalizations
+- (Personal Opinion) Choice of normalization is data dependent
+
+Performance of Normalization Methods
+========================================================
+<img src="./Figures/Compare_Normalizations_IntraGroupCV.png" alt = "drawing" width="600px"/>
+
+***
+
+- These results differ from Dillies et al.
+- Dillies et al. might have violated distributional assumption?
+- Hicks and Irrizay (2014) propose a method for determinig whether constraining normalizations are appropriate.  (R package *quantro*)
 
 
 
